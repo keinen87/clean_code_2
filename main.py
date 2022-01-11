@@ -33,7 +33,8 @@ z=soobchenie[8]
 zz=soobchenie[9]
 zzz=soobchenie[10]
 morz=azbukaMorze[x]+azbukaMorze[xx]+azbukaMorze[xxx]+azbukaMorze[probel1]+azbukaMorze[y]+azbukaMorze[yy]+azbukaMorze[yyy]+azbukaMorze[probel2]+azbukaMorze[z]+azbukaMorze[zz]+azbukaMorze[zzz]        
-adres='http://195.161.68.58'
+adres='http://195.161.114.83'
+
 import requests
 from alive_progress import alive_bar
 import time
@@ -64,176 +65,183 @@ def proigrat_muzyku_Morze( morz ):
         elif morz[ 0 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 0 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 1 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 1 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 1 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 2 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 2 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 2 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 3 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 3 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 3 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 4]  == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 4 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 4 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 5 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 5 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 5 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )  
         if   morz[ 6 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 6 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 6 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 7 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 7 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 7 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 8 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 8 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 8 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 9 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 9 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 9 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )   
         if   morz[ 10 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 10 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 10 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 11 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 11 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 11 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 12 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 12 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 12 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 13 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 13 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 13 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 14 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 14 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 14 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 15 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 15 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 15 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 16 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 16 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 16 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 17 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 17 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 17 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 18 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 18 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 18 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 19 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 19 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 19 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 20 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 20 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 20 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 21 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 21 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 21 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 22 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 22 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 22 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
         if   morz[ 23 ] == '.':
              igrat_muzyku('dot.wav')
         elif morz[ 23 ] == '-':
              igrat_muzyku('dash.wav')
         elif morz[ 23 ] == '|':
-             time.sleep(0.9)
+             time.sleep(0.3)
         bar( )
     print()
 def otpravka_soobshcheniya_robotu(adres, soobshchenie):
     print('Отправка сообщения роботу...')
-    otvet = requests.post(adres,soobshchenie.encode('utf-8'))
+    data = {
+        'msg': soobshchenie.encode('utf-8'),
+        'muz': False
+    }
+    otvet = requests.post(adres,data = data)
     if otvet.status_code == 200:
         print('Команда принята.');time.sleep(1);print('Бегу к вам!')
     elif otvet.status_code == 501:
         print('Команда принята. Продолжаю выполнять прежнюю инструкцию.')
+    elif otvet.status_code == 406:
+        print('Не проигран звук')     
     else:
-        print('Команда не принята. Не понял вас!')      
+        print('Команда не принята. Не понял вас!')
+otpravka_soobshcheniya_robotu(adres, morz)
