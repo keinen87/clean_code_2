@@ -4,6 +4,7 @@
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from optparse import OptionParser
+from urllib.parse import urlparse, parse_qs
 
 FIRST_LAW_COMMANDS = [
     '---...-..---.--.-.-|.--|---.--..-...-.---...-..'
@@ -12,8 +13,9 @@ SECOND_LAW_COMMANDS = [
     '-...-...-.-.|.....-...-.'
 ]
 
+
 class RequestHandler(BaseHTTPRequestHandler):
-    
+
     def do_GET(self):
         
         request_path = self.path
@@ -38,13 +40,16 @@ class RequestHandler(BaseHTTPRequestHandler):
         content_length = request_headers.get('Content-Length')
         length = int(content_length) if content_length else 0
         signal = self.rfile.read(length)
+        fields = parse_qs(signal.decode("utf-8"))
         print("Content Length:", length)
         print("Request headers:", request_headers)
         print("Request payload:", signal)
         print("<----- Request End -----\n")
-        if signal.decode("utf-8") in FIRST_LAW_COMMANDS:
+        if not str2bool(fields['muz'][0]):
+            self.send_response(406)
+        if fields['msg'][0] in FIRST_LAW_COMMANDS:
             self.send_response(200)
-        elif signal.decode("utf-8") in SECOND_LAW_COMMANDS:
+        elif fields['msg'][0] in SECOND_LAW_COMMANDS:
             self.send_response(501)
         else:
             self.send_response(418)    
@@ -52,7 +57,10 @@ class RequestHandler(BaseHTTPRequestHandler):
     
     do_PUT = do_POST
     do_DELETE = do_GET
-        
+
+def str2bool(request):
+    return request.lower() in ("True")
+
 def main():
     port = 8080
     print('Listening on 0.0.0.0:%s' % port)
